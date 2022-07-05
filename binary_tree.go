@@ -51,12 +51,12 @@ func (m *mindTree) findMax () int {
   return m.right.findMax()
 }
 
-func (t *mindTree) printInorder() {
-	if t == nil {
+func (m *mindTree) printInorder() {
+	if m == nil {
 		return
 	}
 
-	t.left.printInorder()
-	fmt.Print(t.value, " ")
-	t.right.printInorder()
+	m.left.printInorder()
+	fmt.Print(m.value, " ")
+	m.right.printInorder()
 }
